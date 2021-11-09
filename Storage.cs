@@ -14,7 +14,7 @@ namespace home9_newStorage
     public delegate void writeToFile(string filename, string uncrorrectInput);
     
     class Storage: IEnumerable
-    {
+    {//Події іменують з великої літери
         public event stringOperating notify;
         public event changeElement<Product> parseElement;
         public event doWithElement<Product> check;
@@ -132,7 +132,7 @@ namespace home9_newStorage
                         }
                         if (readed == "f")
                         {
-
+// А якщо введення не коректні?
                             Product temp;
                             parseElement(out temp);
                             listProducts.Add(temp);
